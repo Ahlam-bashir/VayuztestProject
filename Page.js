@@ -19,12 +19,15 @@ const Page=({navigation})=>{
             //  setimageUrl(responseJson.message)
               console.log(responseJson.message)
       
+            }else{
+                alert('something went wrong')
             }
             
         })
-        //If response is not in json then in error
+        
         .catch((error) => {
             //Error 
+            alert('something went wrong')
             console.error(error);
         });
         }
